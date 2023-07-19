@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "nilmtk-converters"
+version = "0.1.0"
+description = "Convert common NILM dataset into HDF format with nilm-metadata standard"
+authors = ["Emilio J. Palacios-Garcia <emiliojose.palaciosgarcia@kuleuven.be>"]
+readme = "README.md"
+packages = [{include = "nilmtk_converters"}]
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.12"
+nilm-metadata = {git = "git@gitlab.esat.kuleuven.be:premises/nilmtk-metadata.git"}
+nilmtk = {git = "git@gitlab.esat.kuleuven.be:premises/nilmtk-base.git"}
+deddiag-loader = "^0.1.7"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.4.1"
+black = "^23.7.0"
+isort = "^5.12.0"
+
+[[tool.mypy.overrides]]
+ignore_missing_imports = true
+module = [
+    "nilm_metadata.*",
+    "nilmtk.*",
+    "deddiag_loader"
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
