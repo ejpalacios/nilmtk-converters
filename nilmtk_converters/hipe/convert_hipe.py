@@ -4,9 +4,10 @@ from sys import stdout
 
 import pandas as pd
 from nilm_metadata import save_yaml_to_datastore
+from nilmtk.dataset import get_datastore
 from nilmtk.datastore import Key
 from nilmtk.measurement import LEVEL_NAMES
-from nilmtk.utils import check_directory_exists, get_datastore
+from nilmtk.utils import check_directory_exists
 
 
 def convert_hipe(hipe_path, output_filename, format="HDF"):

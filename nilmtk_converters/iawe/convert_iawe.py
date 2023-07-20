@@ -4,10 +4,10 @@ from os.path import join
 import numpy as np
 import pandas as pd
 from nilm_metadata import convert_yaml_to_hdf5
+from nilmtk.dataset import get_datastore
 from nilmtk.datastore import Key
 from nilmtk.measurement import LEVEL_NAMES
-from nilmtk.utils import (check_directory_exists, get_datastore,
-                          get_module_directory)
+from nilmtk.utils import check_directory_exists, get_module_directory
 
 
 def reindex_fill_na(df, idx):

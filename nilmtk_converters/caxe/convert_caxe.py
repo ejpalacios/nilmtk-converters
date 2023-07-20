@@ -1,8 +1,8 @@
 import numpy as np
 import pandas as pd
 from nilm_metadata import convert_yaml_to_hdf5
+from nilmtk.dataset import get_datastore
 from nilmtk.datastore import Key
-from nilmtk.utils import get_datastore
 
 TIMESTAMP_COLUMN_NAME = "timestamp"
 TIMEZONE = "Asia/Kolkata"
