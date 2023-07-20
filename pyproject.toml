@@ -10,9 +10,8 @@ packages = [{include = "nilmtk_converters"}]
 python = ">=3.9,<3.12"
 deddiag-loader = "^0.1.7"
 pandas = "^2.0.3"
-nilm-metadata = {git = "git@gitlab.esat.kuleuven.be:premises/nilmtk-metadata.git"}
-nilmtk = {git = "git@gitlab.esat.kuleuven.be:premises/nilmtk-base.git"}
-pf2-smappee = {git = "git@gitlab.esat.kuleuven.be:privateflex/pf2-smappee.git"}
+nilmtk = {git = "https://github.com/ejpalacios/nilmtk-base.git"}
+nilm-metadata = {git = "https://github.com/ejpalacios/nilm_metadata.git"}
 
 [tool.poetry.group.dev.dependencies]
 mypy = "^1.4.1"
@@ -31,6 +30,10 @@ module = [
     "pf2_smappee.*",
     "deddiag_loader"
 ]
+
+[tool.isort]
+profile = "black"
+skip = ["__init__.py"]
 
 [build-system]
 requires = ["poetry-core"]

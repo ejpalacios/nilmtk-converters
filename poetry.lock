@@ -2083,9 +2083,9 @@ six = "*"
 
 [package.source]
 type = "git"
-url = "git@gitlab.esat.kuleuven.be:premises/nilmtk-metadata.git"
+url = "https://github.com/ejpalacios/nilm_metadata.git"
 reference = "HEAD"
-resolved_reference = "a0758b6075d584ffcd50e5ca7d3c900e991d5cf1"
+resolved_reference = "f5d345976e0fdd910f7d8d31b43edb23725e3fd2"
 
 [[package]]
 name = "nilmtk"
@@ -2099,7 +2099,7 @@ develop = false
 [package.dependencies]
 matplotlib = "^3.7.2"
 networkx = "^3.1"
-nilm-metadata = {git = "git@gitlab.esat.kuleuven.be:premises/nilmtk-metadata.git"}
+nilm-metadata = {git = "https://github.com/ejpalacios/nilm_metadata.git"}
 numpy = "^1.25.1"
 pandas = "^2.0.3"
 pytz = "^2023.3"
@@ -2110,9 +2110,9 @@ tables = "^3.8.0"
 
 [package.source]
 type = "git"
-url = "git@gitlab.esat.kuleuven.be:premises/nilmtk-base.git"
+url = "https://github.com/ejpalacios/nilmtk-base.git"
 reference = "HEAD"
-resolved_reference = "01202287d0ee6d1ac1dd8ebdf69d4650a860671d"
+resolved_reference = "f8993104d7cd0df528aead99e2cfb6c1476b0bb3"
 
 [[package]]
 name = "notebook"
@@ -2380,25 +2380,6 @@ files = [
 
 [package.dependencies]
 ptyprocess = ">=0.5"
-
-[[package]]
-name = "pf2-smappee"
-version = "0.1.0"
-description = "Smappee RESTFul API implementation"
-optional = false
-python-versions = "^3.9"
-files = []
-develop = false
-
-[package.dependencies]
-pytz = "^2023.3"
-requests = "^2.31.0"
-
-[package.source]
-type = "git"
-url = "git@gitlab.esat.kuleuven.be:privateflex/pf2-smappee.git"
-reference = "HEAD"
-resolved_reference = "9171de03db5ddb4cc0d568590c3c22b7e88acea0"
 
 [[package]]
 name = "pickleshare"
@@ -3620,4 +3601,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9,<3.12"
-content-hash = "2febe46712780d997ef868642b95fbaf2c4de2142a5246be94b1cb457a3b2598"
+content-hash = "d68bd9146839565753ba590f808273f442af7eff533ad6f242d25c6742aedb89"
