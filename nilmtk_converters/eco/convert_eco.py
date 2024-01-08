@@ -62,7 +62,7 @@ def convert_eco(dataset_loc, hdf_filename, timezone):
 
     # Traversing every folder
     for folder in directory_list:
-        if folder[0] == "." or folder[-3:] == ".h5":
+        if folder[0] == "." or folder[-3:] == ".h5" or folder[-3:] == ".py":
             print("Skipping ", folder)
             continue
 
@@ -240,6 +240,6 @@ def convert_eco(dataset_loc, hdf_filename, timezone):
 
     # Adding the metadata to the HDF5file
     print("Proceeding to Metadata conversion...")
-    meta_path = join(get_module_directory(), "dataset_converters", "eco", "metadata")
+    meta_path = join(get_module_directory(), "eco", "metadata")
     convert_yaml_to_hdf5(meta_path, hdf_filename)
     print("Completed Metadata conversion.")
